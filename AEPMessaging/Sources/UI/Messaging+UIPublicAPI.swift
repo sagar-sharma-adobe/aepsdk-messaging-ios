@@ -16,8 +16,8 @@ import Foundation
 @available(iOS 15.0, *)
 public extension Messaging {
     /// Retrieves the content cards UI for a given surface.
-    /// Both boot-hydrated disk cards and live network cards are included. Use `ContentCardUI.proposition.cardOrigin`
-    /// to distinguish them for tracking purposes.
+    /// Both boot-hydrated disk cards and live network cards are included; content card interaction
+    /// tracking automatically records whether each card was served from the persisted cache.
     /// - Parameters:
     ///   - surface: The surface for which to retrieve the content cards.
     ///   - customizer: An optional ContentCardCustomizable object to customize the appearance of the content card template.
